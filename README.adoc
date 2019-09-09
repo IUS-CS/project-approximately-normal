@@ -1,1 +1,14 @@
+= Approimately Normal
+:source-highlighter: highlightjs
 
+This project is our neato project that we are doing.
+
+== How to build
+
+. Clone repository
+. ???
+. Profit
+
+== Is it good?
+
+Yes.
