@@ -9,6 +9,8 @@ Our current plans for this product include:
 * Polls for Management to receive information from the public, or group specific people
 * Calendar of upcoming tournaments and events
 
+## How To Build Project
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
