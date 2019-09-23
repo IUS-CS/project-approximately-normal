@@ -1,6 +1,6 @@
 # The goal of this project is to provide a platform for a local (Indiana University Southeast) ESports club/group.
 
-<sub><sup>Small text</sup></sub>
+<sub><sup>This product is currently in pre-production. Little to no features work at the moment.</sup></sub>
 
 Our current plans for this product include:
 
