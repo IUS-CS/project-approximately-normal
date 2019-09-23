@@ -1,9 +1,9 @@
 
  ## Vision statement
 
- FOR (target customer)
- WHO (statement of the need or opportunity)
- The (PRODUCT NAME) is a (product category)
- THAT (key benefit, compelling reason to buy)
- UNLIKE (primary competitive alternative)
- OUR PRODUCT  (statement of primary differentiation)
+ **FOR** the Indiana University Southeast ESports Club
+ **WHO** will be kickedstarted and provide support for
+ **The** IUS ESports Club Website is a web application
+ **THAT** offers a centralized place for recruitment, statistics, and tournament information
+ **UNLIKE** the current situation, being no club, and no website.
+ **OUR PRODUCT** will provide a meaningful way for casual and competitive gamers alike to bond and compete against eachother in local tournaments.
