@@ -1,9 +1,5 @@
 import {
   Breadcrumbs,
-  Cards,
-  Carousels,
-  Collapses,
-  Dropdowns,
   Forms,
   Jumbotrons,
   ListGroups,
@@ -61,7 +57,6 @@ export {
   Forms,
   Dropdowns,
   Collapses,
-  Carousels,
   Cards,
   Breadcrumbs,
   Paginations,
