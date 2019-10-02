@@ -1,5 +1,5 @@
-import React, { Component} from 'react';
-import {Line } from 'react-chartjs-2';
+import React, {Component} from 'react';
+import {Line} from 'react-chartjs-2';
 import {
   Button,
   ButtonGroup,
@@ -19,10 +19,6 @@ import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 const brandSuccess = getStyle('--success')
 const brandInfo = getStyle('--info')
 const brandDanger = getStyle('--danger')
-
-
-
-// Main Chart
 
 //Random Numbers
 function random(min, max) {
