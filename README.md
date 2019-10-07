@@ -16,5 +16,4 @@ The .jar file is created under `/build/libs` underneath the `src` directory. You
 To just test some API endpoints, or to see what is available and what the contracts are, navigate to `localhost:8008/swagger-ui.html`. This is all in Swagger, which will allow you to test and see what the definitions of the endpoints are. 
 
 ## Where is the Frontend?
-The frontend can be found at this location
-https://github.com/IUS-CS/project-approximately-normal
+The frontend can be found on the master branch
