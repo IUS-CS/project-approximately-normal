@@ -19,7 +19,8 @@ The dashboard will contain links to the three other pages(recruitment, calendar,
 
 Here is the diagram that can explain this better
 
-This will be replaced with a diagram eventually.
+![A beautiful diagram][diagram]
 
+[diagram]: ../assets/diagram.svg "Navigation"
 
 [Dashboard] goes to [Recruitment], [Tournament], [Polls], [Calendar] Data for these 4 pages is recieved via endpoint, which pulls data needed for their respective pages from a database.
