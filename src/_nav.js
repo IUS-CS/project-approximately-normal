@@ -137,11 +137,5 @@ export default {
         },
       ],
     },
-    {
-      name: 'Disabled',
-      url: '/dashboard',
-      icon: 'icon-ban',
-      attributes: { disabled: true },
-    },
   ],
 };
