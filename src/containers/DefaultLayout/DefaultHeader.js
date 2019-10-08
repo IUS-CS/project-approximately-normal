@@ -32,14 +32,8 @@ class DefaultHeader extends Component {
           <NavItem className="px-3">
             <NavLink to="/dashboard" className="nav-link" >Dashboard</NavLink>
           </NavItem>
-          <NavItem className="px-3">
-            <NavLink to="#" className="nav-link">Settings</NavLink>
-          </NavItem>
         </Nav>
         <Nav className="ml-auto" navbar>
-         <NavItem className="d-md-down-none">
-            <NavLink to="#" className="nav-link"><i className="icon-list"></i></NavLink>
-          </NavItem>
           <UncontrolledDropdown nav direction="down">
             <DropdownMenu right>
               <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>

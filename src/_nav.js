@@ -4,10 +4,6 @@ export default {
       name: 'Dashboard',
       url: '/dashboard',
       icon: 'icon-speedometer',
-      badge: {
-        variant: 'info',
-        text: 'NEW',
-      },
     },
     {
       title: true,
@@ -77,19 +73,11 @@ export default {
           name: 'CoreUI Icons',
           url: '/icons/coreui-icons',
           icon: 'icon-star',
-          badge: {
-            variant: 'info',
-            text: 'NEW',
-          },
         },
         {
           name: 'Font Awesome',
           url: '/icons/font-awesome',
           icon: 'icon-star',
-          badge: {
-            variant: 'secondary',
-            text: '4.7',
-          },
         },
         {
           name: 'Simple Line Icons',
@@ -124,10 +112,6 @@ export default {
       name: 'Widgets',
       url: '/widgets',
       icon: 'icon-calculator',
-      badge: {
-        variant: 'info',
-        text: 'NEW',
-      },
     },
     {
       divider: true,
@@ -142,16 +126,6 @@ export default {
       icon: 'icon-star',
       children: [
         {
-          name: 'Login',
-          url: '/login',
-          icon: 'icon-star',
-        },
-        {
-          name: 'Register',
-          url: '/register',
-          icon: 'icon-star',
-        },
-        {
           name: 'Error 404',
           url: '/404',
           icon: 'icon-star',
@@ -162,12 +136,6 @@ export default {
           icon: 'icon-star',
         },
       ],
-    },
-    {
-      name: 'Disabled',
-      url: '/dashboard',
-      icon: 'icon-ban',
-      attributes: { disabled: true },
     },
   ],
 };
