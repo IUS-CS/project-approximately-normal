@@ -27,5 +27,5 @@ Here are the list of commands to get docker installed and get a mariadb containe
 * `docker-machine create --driver "virtualbox" myBoxName`
 * `docker-machine start myBoxName`
 * `docker pull mariadb` This will pull down the Docker image of MariaDB from Docker Hub. "Cannot connect to the Docker daemon. Is the docker daemon running on this host?"
-If you start the docker container after opening the terminal, you can either run eval "$(docker-machine env myBoxName)" manually, or reload your bash profile (source ~/.bash_profile).
+If you start the docker container after opening the terminal, you can either run eval `$(docker-machine env myBoxName)` manually, or reload your bash profile `(source ~/.bash_profile)`.
 * `docker run --name mariadb -e MYSQL_ROOT_PASSWORD=root -d mariadb:latest` I would leave this the same since the migration script will use the same password provided.
