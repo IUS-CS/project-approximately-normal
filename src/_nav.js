@@ -6,6 +6,11 @@ export default {
       icon: 'icon-speedometer',
     },
     {
+      name: 'Recruitment',
+      url: '/recruit',
+      icon: 'icon-speedometer',
+    },
+    {
       title: true,
       name: 'Theme',
       wrapper: {            // optional wrapper object
