@@ -10,6 +10,16 @@ export default {
       url: '/recruit',
       icon: 'icon-people',
     },
+    {
+      name: 'Polls',
+      url: '/polls',
+      icon: 'icon-people',
+    },
+    {
+      name: 'Calendar',
+      url: '/calendar',
+      icon: 'icon-people',
+    },
 
 
 
