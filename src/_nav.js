@@ -6,6 +6,7 @@ export default {
       icon: 'icon-speedometer',
     },
     {
+<<<<<<< HEAD
       name: 'Recruitment',
       url: '/recruit',
       icon: 'icon-people',
@@ -147,5 +148,35 @@ export default {
     //     },
     //   ],
     // },
+=======
+      title: true,
+      name: 'IUS Esports',
+      wrapper: {            // optional wrapper object
+        element: '',        // required valid HTML5 element tag
+        attributes: {}        // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
+      },
+      class: ''             // optional class names space delimited list for title item ex: "text-center"
+    },
+    {
+      name: 'Tournament',
+      url: '/theme/colors',
+      icon: 'icon-drop',
+    },
+    {
+      name: 'Calendar',
+      url: '/theme/typography',
+      icon: 'icon-pencil',
+    },
+    {
+      name: 'Polls',
+      url: '/buttons',
+      icon: 'icon-cursor',
+    },
+    {
+      name: 'Recruitment',
+      url: '/charts',
+      icon: 'icon-pie-chart',
+    },
+>>>>>>> ff87f9ff8724c294e9df1dc176fdc5d61409457d
   ],
 };
