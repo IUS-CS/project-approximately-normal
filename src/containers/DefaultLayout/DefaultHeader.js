@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import { Badge, UncontrolledDropdown, DropdownItem, DropdownMenu, Nav, NavItem } from 'reactstrap';
 import PropTypes from 'prop-types';
 
