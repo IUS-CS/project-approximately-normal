@@ -22,18 +22,17 @@ class DefaultHeader extends Component {
     return (
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
+        <AppSidebarToggler className="d-md-down-none" display="lg" />
+        <Nav className="d-md-down-none" navbar>
+          <NavItem className="px-3">
+          </NavItem>
+        </Nav>
         <AppNavbarBrand
           full={{ src: logo, width: 45, height: 50, alt: 'CoreUI Logo' }}
           minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
         />
-        <AppSidebarToggler className="d-md-down-none" display="lg" />
-
-        <Nav className="d-md-down-none" navbar>
-          <NavItem className="px-3">
-            <NavLink to="/dashboard" className="nav-link" >Dashboard</NavLink>
-          </NavItem>
-        </Nav>
         <Nav className="ml-auto" navbar>
+
           <UncontrolledDropdown nav direction="down">
             <DropdownMenu right>
               <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
