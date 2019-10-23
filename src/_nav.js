@@ -34,24 +34,24 @@ export default {
     //   },
     //   class: ''             // optional class names space delimited list for title item ex: "text-center"
     // },
-    // {
-    //   name: 'Colors',
-    //   url: '/theme/colors',
-    //   icon: 'icon-drop',
-    // },
-    // {
-    //   name: 'Typography',
-    //   url: '/theme/typography',
-    //   icon: 'icon-pencil',
-    // },
-    // {
-    //   title: true,
-    //   name: 'Components',
-    //   wrapper: {
-    //     element: '',
-    //     attributes: {},
-    //   },
-    // },
+    {
+      name: 'Colors',
+      url: '/theme/colors',
+      icon: 'icon-drop',
+    },
+    {
+      name: 'Typography',
+      url: '/theme/typography',
+      icon: 'icon-pencil',
+    },
+    {
+      title: true,
+      name: 'Components',
+      wrapper: {
+        element: '',
+        attributes: {},
+      },
+    },
     // {
     //   name: 'Buttons',
     //   url: '/buttons',
