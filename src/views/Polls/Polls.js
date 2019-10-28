@@ -31,23 +31,7 @@ class Dashboard extends Component {
 
     return (
         <form onSubmit={this.mySubmitHandler}>
-      <h1>Hi Potential Group Member!</h1>
-      <br></br>
-      <p>Want to Join? Give us your first and last name</p>
-      <input
-        type='text'
-        onChange={this.myChangeHandler}
-      />
-      <br></br>
-      <br></br>
-      <p>As well as your email</p>
-    <input
-        type='text'
-        onChange={this.myChangeHandler}
-    />
-      <input
-        type='submit'
-      />
+      <h1>These are the Polls!</h1>
       </form>
     );
   }
