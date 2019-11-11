@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Calendar from 'react-calendar';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Dashboard extends Component {
     this.state = {
       dropdownOpen: false,
       radioSelected: 2,
+      date: new Date()
     };
   }
 
@@ -26,16 +28,18 @@ class Dashboard extends Component {
   }
 
   loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
-
+  onChange = date => this.setState({ date })
   render() {
-
     return (
-        <form onSubmit={this.mySubmitHandler}>
-      <h1>This is the calendar!
-      </h1>
-      </form>
+      <div>
+        <Calendar
+          onChange={this.onChange}
+          value={this.state.date}
+        />
+      </div>
     );
   }
 }
+
 
 export default Dashboard;
