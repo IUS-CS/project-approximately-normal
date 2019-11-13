@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import styles from './Recruitment.module.css'
 
 class Dashboard extends Component {
   constructor(props) {
@@ -30,25 +31,125 @@ class Dashboard extends Component {
   render() {
 
     return (
-        <form onSubmit={this.mySubmitHandler}>
-      <h1>Hi Potential Group Member!</h1>
-      <br></br>
-      <p>Want to Join? Give us your first and last name</p>
-      <input
-        type='text'
-        onChange={this.myChangeHandler}
-      />
-      <br></br>
-      <br></br>
-      <p>As well as your email</p>
-    <input
-        type='text'
-        onChange={this.myChangeHandler}
-    />
-      <input
-        type='submit'
-      />
-      </form>
+      <div className="animated fadeIn">
+        <div className="card">
+          <form onSubmit={this.mySubmitHandler}>
+            <div>
+
+              <div className="card-header">
+                <span className={styles.headerText}>Recruitment Form</span>
+              </div>
+              <br></br>
+              <div className={styles.rowInput}>
+                <div className={styles.areaOfInput}>
+                  <div className={styles.labels}>First Name</div>
+                  <input
+                    type='text'
+                    onChange={this.myChangeHandler}
+                  />
+                </div>
+                <div className={styles.areaOfInput}>
+                  <div className={styles.labels}>Last Name</div>
+                  <input
+                    type='text'
+                    onChange={this.myChangeHandler}
+                  /></div>
+              </div>
+              <br></br>
+              <div className={styles.rowInput}>
+                <div className={styles.areaOfInput}>
+                  <div className={styles.labels}>School Email</div>
+                  <input
+                    type='text'
+                    onChange={this.myChangeHandler}
+                  />
+                </div>
+                <div className={styles.areaOfInput}>
+                  <div className={styles.labels}>
+                    Graduation Year
+              </div>
+                  <input
+                    type='text'
+                    onChange={this.myChangeHandler}
+                  />
+                </div>
+              </div>
+              <br></br>
+              <div className={styles.seperatorText}>Indicate below, games you are interested in:</div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>League of Legends</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>Fortnite</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>Counter Strike: Golbal Offensive</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>DOTA 2</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>Overwatch</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>Minecraft</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>FIFA20</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>APEX Legends</div>
+              </div>
+              <div className={styles.checkBoxSection}> 
+              <input
+                type='checkbox'
+                onChange={this.myChangeHandler}
+              /> <div className={styles.checkBoxLabels}>Call of Duty - Modern Warfare</div>
+              </div>
+              
+              
+              <br></br>
+              <div className={styles.rowInput}>
+                <div className={styles.areaOfInput}>
+                  <div className={styles.labels}>Other Games:</div>
+                  <input className={styles.bigInput}
+                    type='text'
+                    onChange={this.myChangeHandler}
+                  />
+                </div>
+              </div>
+              <br></br>
+              <br></br>
+              <input className={styles.submitButton}
+                type='submit'
+              /></div>
+          </form>
+        </div>
+      </div>
     );
   }
 }
