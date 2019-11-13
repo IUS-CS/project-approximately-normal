@@ -1,0 +1,53 @@
+form .rowInput {
+    display: flex;
+    flex-direction: row;
+}
+form .areaOfInput {
+    margin-right: 5rem;
+    padding-left: 1rem;
+}
+form .headerText {
+    font-size: 1.5rem;
+}
+form .seperatorText {
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+form .labels {
+    padding-left: .25rem;
+    padding-bottom: .25rem;
+}
+form .bigInput {
+    height: 3rem;
+    width: 25rem;
+    
+}
+form .checkBoxSection {
+    padding-top: .5rem; 
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+input[type="checkbox"] {
+    margin-top: .3rem;
+}
+form .checkBoxLabels {
+    padding-left: .75rem;
+}
+
+form .submitButton {
+    background-color: #20a8d8;
+    text-align: center;
+    color: white;
+    border: black;
+    font-size: 1rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+form .submitButton:hover {
+    background-color: #63c2de;
+    color: white;
+}
