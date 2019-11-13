@@ -9,8 +9,6 @@ USE approximately_normal;
 CREATE OR REPLACE TABLE calendar (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(255) NULL,
-	start_date DATE NULL,
-	end_date DATE NULL,
 	event_id INT NOT NULL,
 	created_at DATE NULL,
 	created_by VARCHAR(255) NULL,
@@ -26,6 +24,8 @@ CREATE OR REPLACE TABLE event (
 	name VARCHAR(255) NULL,
 	description VARCHAR(255) NULL,
 	location VARCHAR(255) NULL,
+	start_date DATE NULL,
+	end_date DATE NULL,
 	created_at DATE NULL,
 	created_by VARCHAR(255) NULL,
 	udpated_at DATE NULL,

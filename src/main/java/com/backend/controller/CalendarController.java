@@ -28,9 +28,4 @@ public class CalendarController {
         return ResponseEntity.ok(calendarRepository.findAll());
     }
 
-    @GetMapping("/calendar/{calendar_id}")
-    public ResponseEntity<Calendar> getCalendarById(@PathVariable("calendar_id") Integer calendarId) {
-        Calendar calendar = Assert.found(calendarRepository.findById(calendarId));
-        return ResponseEntity.ok(calendar);
-    }
 }

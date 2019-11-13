@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/approximately_normal
+    username: root
+    password: root
+  application:
+    name: approximately-normal-backend
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: false
+    format-sql: true
+    use-sql-comment: true
+    hibernate:
+        ddl-auto: none
+        naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+        dialect: org.hibernate.dialect/MySQL5Dialect
+
+eureka:
+  client:
+    service-url:
+      default-zome: http://localhost:8761/eureka
