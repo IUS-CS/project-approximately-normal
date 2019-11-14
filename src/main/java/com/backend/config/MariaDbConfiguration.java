@@ -18,10 +18,10 @@ import javax.sql.DataSource;
 @ComponentScan({"com.backend"})
 @EnableTransactionManagement
 public class MariaDbConfiguration {
-    @Value("${spring.datasource.driverClassName") String driverClassName;
-    @Value("${spring.datasource.url") String url;
-    @Value("${spring.datasource.username") String username;
-    @Value("${spring.datasource.password") String password;
+    @Value("${spring.datasource.driverClassName}") String driverClassName;
+    @Value("${spring.datasource.url}") String url;
+    @Value("${spring.datasource.username}") String username;
+    @Value("${spring.datasource.password}") String password;
 
     @Bean(name="bpmDataSource")
     public DataSource getBpmDataSource() {
