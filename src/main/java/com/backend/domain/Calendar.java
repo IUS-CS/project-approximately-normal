@@ -9,6 +9,8 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
+
 @Entity
 @Table(name = "calendar")
 @EntityListeners(AuditingEntityListener.class)
@@ -27,8 +29,8 @@ public class Calendar {
     @Column(name = "end_date")
     private Date end_date;
 
-    @PrimaryKeyJoinColumn(name="event_id")
-    private Event event;
+    @OneToMany(targetEntity = Event.class, fetch = FetchType.EAGER)
+    private List<Event> event;
 
     @Column(name="updatedBy")
     @LastModifiedBy
@@ -111,11 +113,11 @@ public class Calendar {
         this.end_date = end_date;
     }
 
-    public Event getEvent() {
+    public List<Event> getEvent() {
         return event;
     }
 
-    public void setEvent(Event event) {
+    public void setEvent(List<Event> event) {
         this.event = event;
     }
 

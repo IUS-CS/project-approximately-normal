@@ -12,5 +12,4 @@ import java.util.Optional;
 @Repository
 public interface CalendarRepository extends CrudRepository<Calendar, Integer> {
         Optional<Calendar> findByName(@Param("name") String name);
-        Page<Calendar> findAll(Pageable pageable);
 }

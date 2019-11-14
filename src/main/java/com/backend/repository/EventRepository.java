@@ -8,10 +8,10 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.awt.print.Pageable;
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public interface EventRepository extends CrudRepository<Event, Integer> {
     Optional<Calendar> findByName(@Param("name") String name);
-    Page<Calendar> findAll(Pageable pageable);
 }
