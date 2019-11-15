@@ -13,12 +13,12 @@ export default {
     {
       name: 'Polls',
       url: '/polls',
-      icon: 'icon-people',
+      icon: 'cui-chart',
     },
     {
       name: 'Calendar',
       url: '/calendar',
-      icon: 'icon-people',
+      icon: 'cui-calendar',
     },
 
 
