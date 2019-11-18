@@ -9,7 +9,6 @@ import {
   CardFooter,
   CardTitle,
   Col,
-  Progress,
   Row,
 } from 'reactstrap';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
