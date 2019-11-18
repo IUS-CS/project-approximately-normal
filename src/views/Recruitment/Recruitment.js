@@ -76,62 +76,79 @@ class Dashboard extends Component {
               </div>
               <br></br>
               <div className={styles.seperatorText}>Indicate below, games you are interested in:</div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>League of Legends</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>Leage Of Legends</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>Fortnite</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>Fortnite</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>Counter Strike: Golbal Offensive</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>Counter Strike: Global Offensive</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>DOTA 2</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>DOTA 2</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>Overwatch</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>Overwatch</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>Minecraft</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>Minecraft</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>FIFA20</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>FIFA 20</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>APEX Legends</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>APEX Legends</div>
+                </label>
               </div>
-              <div className={styles.checkBoxSection}> 
-              <input
-                type='checkbox'
-                onChange={this.myChangeHandler}
-              /> <div className={styles.checkBoxLabels}>Call of Duty - Modern Warfare</div>
+              <div>
+                <label className={styles.checkBoxArea}>
+                  <input className={styles.chb}
+                    type='checkbox'
+                    onChange={this.myChangeHandler}
+                  /> <div className={styles.label}>Call of Duty - Modern Warfare</div>
+                </label>
               </div>
-              
-              
+
               <br></br>
               <div className={styles.rowInput}>
                 <div className={styles.areaOfInput}>
