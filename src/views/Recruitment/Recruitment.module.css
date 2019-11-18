@@ -12,6 +12,7 @@ form .headerText {
 form .seperatorText {
     padding-left: 1rem;
     font-size: 1.3rem;
+    padding-bottom: 1rem;
 }
 form .labels {
     padding-left: .25rem;
@@ -22,19 +23,18 @@ form .bigInput {
     width: 25rem;
     
 }
-form .checkBoxSection {
-    padding-top: .5rem; 
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: row;
-}
 input[type="checkbox"] {
     margin-top: .3rem;
 }
-form .checkBoxLabels {
-    padding-left: .75rem;
+form .checkBoxArea {
+    display: flex;
 }
-
+form .chb {
+    margin-left: 1rem;
+}
+form .label {
+    margin-left: .5rem;
+}
 form .submitButton {
     background-color: #20a8d8;
     text-align: center;
