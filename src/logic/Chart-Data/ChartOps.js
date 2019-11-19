@@ -1,5 +1,7 @@
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 
+//This function is used to determine the behavior
+//of a Chart. Default options should be fine
 function chartOps() {
     const mainChartOpts = {
       tooltips: {

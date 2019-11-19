@@ -9,6 +9,7 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+//This is a stand in until real data comes in
 function getData(set) {
     var elements = 27;
     var data1 = [];
@@ -28,7 +29,10 @@ function getData(set) {
     }
 }
 
+//Returns a chart's data to be used with the Line component
+//Currently just using test data
 function chartData() {
+    //Pretending to get data
     let data1 = getData(1);
     let data2 = getData(2);
     let data3 = getData(3);
@@ -36,11 +40,13 @@ function chartData() {
       labels: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
       datasets: [
         {
+          //UI info
           label: 'My First dataset',
           backgroundColor: hexToRgba(brandInfo, 10),
           borderColor: brandInfo,
           pointHoverBackgroundColor: '#fff',
           borderWidth: 2,
+          //The real data
           data: data1,
         },
         {
