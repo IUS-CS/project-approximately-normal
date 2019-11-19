@@ -13,11 +13,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
-
 @Configuration
 @ComponentScan({"com.backend"})
 @EnableTransactionManagement
-public class MariaDbConfiguration {
+public class SQLiteConfiguration {
     @Value("${spring.datasource.driverClassName}") String driverClassName;
     @Value("${spring.datasource.url}") String url;
     @Value("${spring.datasource.username}") String username;
@@ -26,22 +25,22 @@ public class MariaDbConfiguration {
     @Bean(name="bpmDataSource")
     public DataSource getBpmDataSource() {
         DataSource dataSource = DataSourceBuilder
-            .create()
-            .username(username)
-            .password(password)
-            .url(url)
-            .driverClassName(driverClassName)
-            .build();
+                .create()
+                .username(username)
+                .password(password)
+                .url(url)
+                .driverClassName(driverClassName)
+                .build();
         return dataSource;
     }
 
-    @Bean(name="jpaDialect")
-    public JpaDialect getJpaDialect() {return new HibernateJpaDialect();}
-
-    @Bean(name="bpmTransactionManager")
-    public JpaTransactionManager getTransactionManager(EntityManagerFactory bpmEntityManagerFactory, JpaDialect jpaDialect) {
-        JpaTransactionManager transactionManager = new JpaTransactionManager(bpmEntityManagerFactory);
-        transactionManager.setJpaDialect(jpaDialect);
-        return transactionManager;
-    }
+//    @Bean(name="jpaDialect")
+//    public JpaDialect getJpaDialect() {return new HibernateJpaDialect();}
+//
+//    @Bean(name="bpmTransactionManager")
+//    public JpaTransactionManager getTransactionManager(EntityManagerFactory bpmEntityManagerFactory, JpaDialect jpaDialect) {
+//        JpaTransactionManager transactionManager = new JpaTransactionManager(bpmEntityManagerFactory);
+//        transactionManager.setJpaDialect(jpaDialect);
+//        return transactionManager;
+//    }
 }
