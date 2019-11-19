@@ -15,7 +15,6 @@ import {
 } from './Base';
 
 import { ButtonDropdowns, ButtonGroups, Buttons, BrandButtons } from './Buttons';
-import Charts from './Charts';
 import Dashboard from './Dashboard';
 import { CoreUIIcons, Flags, FontAwesome, SimpleLineIcons } from './Icons';
 import { Alerts, Badges, Modals } from './Notifications';
@@ -42,7 +41,6 @@ export {
   Tooltips,
   Tabs,
   Tables,
-  Charts,
   Dashboard,
   Widgets,
   Jumbotrons,
