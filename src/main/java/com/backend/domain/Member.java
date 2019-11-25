@@ -10,20 +10,24 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.sql.Date;
-import java.util.List;
-
 @Entity
-@Table(name = "calendar")
+@Table(name = "member")
 @EntityListeners(AuditingEntityListener.class)
-public class Calendar {
+public class Member {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Basic
-    private Integer id;
+    private int id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "last_name")
+    private String lastName;
+
+    @Column(name = "email")
+    private String email;
 
     @Column(name = "start_date")
     private Date start_date;
@@ -31,8 +35,8 @@ public class Calendar {
     @Column(name = "end_date")
     private Date end_date;
 
-    @OneToMany(targetEntity = Event.class, fetch = FetchType.EAGER)
-    private List<Event> event;
+    @Column(name="location")
+    private String location;
 
     @Column(name="updatedBy")
     @LastModifiedBy
@@ -46,13 +50,36 @@ public class Calendar {
     @LastModifiedDate
     private long updatedAt;
 
-    @Column(name = "createdAt")
-    @CreatedDate
-    private long createdAt;
-
-
-    public Integer getId() {
+    public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Date getStart_date() {
+        return start_date;
+    }
+
+    public void setStart_date(Date start_date) {
+        this.start_date = start_date;
+    }
+
+    public Date getEnd_date() {
+        return end_date;
+    }
+
+    public void setEnd_date(Date end_date) {
+        this.end_date = end_date;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getUpdatedBy() {
@@ -87,40 +114,32 @@ public class Calendar {
         this.createdAt = createdAt;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    @Column(name = "createdAt")
+    @CreatedDate
+    private long createdAt;
+
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getName() {
-        return name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getLastName() {
+        return lastName;
     }
 
-    public Date getStart_date() {
-        return start_date;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public void setStart_date(Date start_date) {
-        this.start_date = start_date;
+    public String getEmail() {
+        return email;
     }
 
-    public Date getEnd_date() {
-        return end_date;
+    public void setEmail(String email) {
+        this.email = email;
     }
-
-    public void setEnd_date(Date end_date) {
-        this.end_date = end_date;
-    }
-
-    public List<Event> getEvent() {
-        return event;
-    }
-
-    public void setEvent(List<Event> event) {
-        this.event = event;
-    }
-
 }

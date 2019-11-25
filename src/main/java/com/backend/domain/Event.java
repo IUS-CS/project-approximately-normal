@@ -8,15 +8,17 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.sql.Date;
 @Entity
 @Table(name = "event")
 @EntityListeners(AuditingEntityListener.class)
 public class Event {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    @Basic
+    private int id;
 
     @Column(name = "name")
     private String name;
@@ -45,11 +47,11 @@ public class Event {
     @LastModifiedDate
     private long updatedAt;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
