@@ -4,6 +4,8 @@ import com.backend.domain.Member;
 import com.backend.domain.MemberDTO;
 import com.backend.repository.CalendarRepository;
 import com.backend.repository.MemberRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,16 +34,19 @@ public class MemberController {
         this.modelMapper = modelMapper;
     }
 
+    @ApiOperation("Gets all members from the member table")
     @GetMapping("/")
     public ResponseEntity<Page<Member>> getMembers(Pageable pageable) {
         return ResponseEntity.ok(memberRepository.findAll(pageable));
     }
 
+    @ApiOperation("Gets a member by a specific id")
     @GetMapping("/{member_id}")
     public ResponseEntity<Optional<Member>> getMemberById(@PathVariable("member_id") Integer eventId) {
         return ResponseEntity.ok(memberRepository.findById(eventId));
     }
 
+    @ApiOperation("Creates a new member")
     @PostMapping("/")
     public ResponseEntity<Member> createMember(@RequestBody MemberDTO memberDTO) {
         Member member = modelMapper.map(memberDTO, Member.class);

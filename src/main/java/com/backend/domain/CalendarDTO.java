@@ -6,26 +6,15 @@ import java.util.List;
 
 public class CalendarDTO {
     @NotNull
-    private String name;
-    @NotNull
-    private String start_date;
+    private Date start_date;
     @NotNull
     private Date end_date;
-    @NotNull
-    private List<Integer> event;
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getStartDate() {
+    public Date getStartDate() {
         return start_date;
     }
 
-    public void setStartDate(String startDate) {
+    public void setStartDate(Date startDate) {
         this.start_date = startDate;
     }
 
@@ -35,14 +24,6 @@ public class CalendarDTO {
 
     public void setEndDate(Date endDate) {
         this.end_date = endDate;
-    }
-
-    public List<Integer> getEvent() {
-        return event;
-    }
-
-    public void setEvent(List<Integer> event) {
-        this.event = event;
     }
 
 }

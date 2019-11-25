@@ -18,8 +18,6 @@ import java.util.Optional;
 public interface CalendarRepository extends CrudRepository<Calendar, Integer> {
         Optional<Calendar> findByName(@Param("name") String name);
         //Page<Calendar> findAllByStart_DateLessThanEqualAndEnd_DateGreaterThanEqual(OffsetDateTime end_date, OffsetDateTime start_date, Pageable pageable);
-        //@Query(value = "from calendar t where start_date BETWEEN :startDate AND :endDate")
-        //public List<Event> getAllBetweenDates(@Param("startDate") Date startDate, @Param("endDate")Date endDate);
-
-
+        @Query(value = "from Event t where start_date BETWEEN :start_date AND :end_date")
+        List<Event> getAllBetweenDates(@Param("start_date") Date start_date, @Param("end_date")Date end_date);
 }
