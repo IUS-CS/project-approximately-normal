@@ -1,13 +1,19 @@
 package com.backend.controller;
 
 import com.backend.domain.Calendar;
+import com.backend.domain.Event;
 import com.backend.repository.CalendarRepository;
-import com.backend.util.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.sql.Date;
+import java.time.OffsetDateTime;
+import java.util.List;
 
 
 @CrossOrigin
@@ -23,9 +29,11 @@ public class CalendarController {
         this.calendarRepository = calendarRepository;
     }
 
-    @GetMapping("/calendar")
-    public ResponseEntity<Iterable<Calendar>> getCalendar() {
-        return ResponseEntity.ok(calendarRepository.findAll());
-    }
+//    @GetMapping("/")
+//    public ResponseEntity<List<Event>> getCalendar(@PathVariable("start_date") Date start_date,
+//                                                   @PathVariable("end_date") Date end_date,
+//                                                   Pageable pageable) {
+//        return ResponseEntity.ok(calendarRepository.getAllBetweenDates(start_date, end_date));
+//    }
 
 }

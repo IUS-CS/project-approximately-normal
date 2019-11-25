@@ -15,9 +15,10 @@ import java.sql.Date;
 @EntityListeners(AuditingEntityListener.class)
 public class Event {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    @Basic
+    private int id;
 
     @Column(name = "name")
     private String name;
@@ -46,11 +47,11 @@ public class Event {
     @LastModifiedDate
     private long updatedAt;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 

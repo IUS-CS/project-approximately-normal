@@ -10,15 +10,16 @@ spring:
   application:
     name: approximately-normal-backend
   jpa:
-    database: mysql
+    #database: mysql
     database-platform: com.backend.config.SQLiteDialect
     show-sql: false
     format-sql: true
     use-sql-comment: true
     hibernate:
-        ddl-auto: none
+        ddl-auto: update #update
         naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
-        dialect: com.backend.config.SQLiteDialect
+        #dialect: com.backend.config.SQLiteDialect
+        dialect: org.hibernate.dialect.SQLiteDialect
 
 eureka:
   client:

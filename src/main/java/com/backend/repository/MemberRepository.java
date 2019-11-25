@@ -1,7 +1,7 @@
 package com.backend.repository;
 
 import com.backend.domain.Calendar;
-import com.backend.domain.Event;
+import com.backend.domain.Member;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface EventRepository extends CrudRepository<Event, Integer> {
+public interface MemberRepository extends CrudRepository<Member, Integer> {
 
-    Optional<Calendar> findByName(@Param("name") String name);
-    Page<Event> findAll(Pageable pageable);
+    Page<Member> findAll(Pageable pageable);
 }
