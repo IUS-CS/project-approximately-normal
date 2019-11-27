@@ -33,6 +33,13 @@ public class CalendarController {
         this.modelMapper = modelMapper;
     }
 
+    /**
+     * This method will get all events that are between the start_date and end_date
+     * provided.
+     @param start_date the start date of event(s) to search
+     @param end_date the end date of event(s) to search
+     @return ResponseEntity<List<Event>>
+     */
     // might need to add a pagable object
     @ApiOperation("Gets all events between a start date and end date based on the event's 'start date.'")
     @GetMapping("/")
