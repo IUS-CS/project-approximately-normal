@@ -34,12 +34,22 @@ public class EventController {
         this.modelMapper = modelMapper;
     }
 
+    /**
+     * Return all events provided the pageable object
+     * @param pageable
+     * @return ResponseEntity<Page<Event>>
+     */
     @ApiOperation("Gets all events from the event table.")
     @GetMapping("/")
     public ResponseEntity<Page<Event>> getEvents(Pageable pageable) {
         return ResponseEntity.ok(eventRepository.findAll(pageable));
     }
 
+    /**
+     * Get an event provided with an id.
+     * @param eventId
+     * @return ResponseEntity<Optional<Event>>
+     */
     @ApiOperation("Gets an event by id.")
     @GetMapping("/{event_id}")
     public ResponseEntity<Optional<Event>> getEventById(@PathVariable("event_id") Integer eventId) {
@@ -47,6 +57,11 @@ public class EventController {
         return ResponseEntity.ok(eventRepository.findById(eventId));
     }
 
+    /**
+     * Creates and event provided with the EventDTO
+     * @param eventDTO
+     * @return ResponseEntity<Event>
+     */
     @ApiOperation("Creates an event")
     @PostMapping("/")
     public ResponseEntity<Event> createEvent(@RequestBody EventDTO eventDTO) {
