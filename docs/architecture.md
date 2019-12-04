@@ -23,4 +23,4 @@ Here is the diagram that can explain this better
 
 [diagram]: ../assets/diagram.svg "Navigation"
 
-[Dashboard] goes to [Recruitment], [Tournament], [Polls], [Calendar] Data for these 4 pages is recieved via endpoint, which pulls data needed for their respective pages from a database.
+[Dashboard] goes to [Recruitment], [Tournament], [Calendar] Data for these 4 pages is recieved via endpoint, which pulls data needed for their respective pages from a database.

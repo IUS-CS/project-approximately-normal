@@ -1,7 +1,0 @@
-{
-    "name": "polls",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./Polls.js"
-  }
-  
