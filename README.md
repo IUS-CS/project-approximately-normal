@@ -6,7 +6,6 @@ Our current plans for this product include:
 
 * Statistics and Management of local tournaments or events
 * Recruitment for the club/group
-* Polls for Management to receive information from the public, or group specific people
 * Calendar of upcoming tournaments and events
 
 ## How To Build Project
