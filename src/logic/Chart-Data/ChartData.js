@@ -4,7 +4,7 @@ const brandSuccess = getStyle('--success')
 const brandInfo = getStyle('--info')
 const brandDanger = getStyle('--danger')
 
-//Random Numbers
+//Random Numbers for fake data
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -29,15 +29,30 @@ function getData(set) {
     }
 }
 
+//This determines what time labels the chart will be using
+function getLabels(timePeriod) {
+  switch (timePeriod) {
+    case "Years": 
+      return ['2015', '2016', '2017', '2018', '2019'];
+    case "Months":
+      return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    case "Days":
+      return ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']
+    default:
+      return ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']
+  }
+}
+
 //Returns a chart's data to be used with the Line component
 //Currently just using test data
-function chartData() {
+function chartData(timePeriod) {
     //Pretending to get data
     let data1 = getData(1);
     let data2 = getData(2);
     let data3 = getData(3);
+    const timeLabels = getLabels(timePeriod);
     const mainChart = {
-      labels: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+      labels: timeLabels,
       datasets: [
         {
           //UI info
