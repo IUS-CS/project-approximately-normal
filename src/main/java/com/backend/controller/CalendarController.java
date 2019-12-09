@@ -17,7 +17,7 @@ import java.sql.Date;
 import java.util.List;
 
 
-@CrossOrigin
+@CrossOrigin (origins = "http://localhost:3000")
 @RestController
 @RequestMapping(value = "/v1/calendar")
 public class CalendarController {
