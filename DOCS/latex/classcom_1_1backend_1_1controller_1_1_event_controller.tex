@@ -1,0 +1,72 @@
+\hypertarget{classcom_1_1backend_1_1controller_1_1_event_controller}{}\doxysection{com.\+backend.\+controller.\+Event\+Controller Class Reference}
+\label{classcom_1_1backend_1_1controller_1_1_event_controller}\index{com.backend.controller.EventController@{com.backend.controller.EventController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_event_controller_aff3a267b23de7dc2a9d764c53ee2f5d5}{Event\+Controller}} (\mbox{\hyperlink{interfacecom_1_1backend_1_1repository_1_1_event_repository}{Event\+Repository}} event\+Repository, Model\+Mapper model\+Mapper)
+\item 
+Response\+Entity$<$ Page$<$ \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}} $>$ $>$ \mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_event_controller_a97db5d268229718f5ba857410e7b18e9}{get\+Events}} (Pageable pageable)
+\item 
+Response\+Entity$<$ Optional$<$ \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}} $>$ $>$ \mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_event_controller_a8794a724a99481c0e5428e62906b1e00}{get\+Event\+By\+Id}} (@Path\+Variable(\char`\"{}event\+\_\+id\char`\"{}) Integer event\+Id)
+\item 
+Response\+Entity$<$ \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}} $>$ \mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_event_controller_a691af375067447ea9916386bc8c1dc97}{create\+Event}} (@Request\+Body \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event_d_t_o}{Event\+D\+TO}} event\+D\+TO)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_event_controller_aff3a267b23de7dc2a9d764c53ee2f5d5}\label{classcom_1_1backend_1_1controller_1_1_event_controller_aff3a267b23de7dc2a9d764c53ee2f5d5}} 
+\index{com.backend.controller.EventController@{com.backend.controller.EventController}!EventController@{EventController}}
+\index{EventController@{EventController}!com.backend.controller.EventController@{com.backend.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{EventController()}{EventController()}}
+{\footnotesize\ttfamily com.\+backend.\+controller.\+Event\+Controller.\+Event\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1backend_1_1repository_1_1_event_repository}{Event\+Repository}}}]{event\+Repository,  }\item[{Model\+Mapper}]{model\+Mapper }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_event_controller_a691af375067447ea9916386bc8c1dc97}\label{classcom_1_1backend_1_1controller_1_1_event_controller_a691af375067447ea9916386bc8c1dc97}} 
+\index{com.backend.controller.EventController@{com.backend.controller.EventController}!createEvent@{createEvent}}
+\index{createEvent@{createEvent}!com.backend.controller.EventController@{com.backend.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{createEvent()}{createEvent()}}
+{\footnotesize\ttfamily Response\+Entity$<$\mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}}$>$ com.\+backend.\+controller.\+Event\+Controller.\+create\+Event (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event_d_t_o}{Event\+D\+TO}}}]{event\+D\+TO }\end{DoxyParamCaption})}
+
+Creates and event provided with the Event\+D\+TO 
+\begin{DoxyParams}{Parameters}
+{\em event\+D\+TO} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Entity$<$\+Event$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_event_controller_a8794a724a99481c0e5428e62906b1e00}\label{classcom_1_1backend_1_1controller_1_1_event_controller_a8794a724a99481c0e5428e62906b1e00}} 
+\index{com.backend.controller.EventController@{com.backend.controller.EventController}!getEventById@{getEventById}}
+\index{getEventById@{getEventById}!com.backend.controller.EventController@{com.backend.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{getEventById()}{getEventById()}}
+{\footnotesize\ttfamily Response\+Entity$<$Optional$<$\mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}}$>$ $>$ com.\+backend.\+controller.\+Event\+Controller.\+get\+Event\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}event\+\_\+id\char`\"{}) Integer}]{event\+Id }\end{DoxyParamCaption})}
+
+Get an event provided with an id. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Entity$<$Optional$<$\+Event$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_event_controller_a97db5d268229718f5ba857410e7b18e9}\label{classcom_1_1backend_1_1controller_1_1_event_controller_a97db5d268229718f5ba857410e7b18e9}} 
+\index{com.backend.controller.EventController@{com.backend.controller.EventController}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!com.backend.controller.EventController@{com.backend.controller.EventController}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily Response\+Entity$<$Page$<$\mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}}$>$ $>$ com.\+backend.\+controller.\+Event\+Controller.\+get\+Events (\begin{DoxyParamCaption}\item[{Pageable}]{pageable }\end{DoxyParamCaption})}
+
+Return all events provided the pageable object 
+\begin{DoxyParams}{Parameters}
+{\em pageable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Entity$<$Page$<$\+Event$>$$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/backend/controller/\mbox{\hyperlink{_event_controller_8java}{Event\+Controller.\+java}}\end{DoxyCompactItemize}

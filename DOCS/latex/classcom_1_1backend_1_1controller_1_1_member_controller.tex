@@ -1,0 +1,72 @@
+\hypertarget{classcom_1_1backend_1_1controller_1_1_member_controller}{}\doxysection{com.\+backend.\+controller.\+Member\+Controller Class Reference}
+\label{classcom_1_1backend_1_1controller_1_1_member_controller}\index{com.backend.controller.MemberController@{com.backend.controller.MemberController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_member_controller_abc70f18b1eb17e676134467cf5ede690}{Member\+Controller}} (\mbox{\hyperlink{interfacecom_1_1backend_1_1repository_1_1_member_repository}{Member\+Repository}} member\+Repository, Model\+Mapper model\+Mapper)
+\item 
+Response\+Entity$<$ Page$<$ \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member}{Member}} $>$ $>$ \mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_member_controller_a874b703f983efb546d784c46146f8f3b}{get\+Members}} (Pageable pageable)
+\item 
+Response\+Entity$<$ Optional$<$ \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member}{Member}} $>$ $>$ \mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_member_controller_af93e58a405c238a01502b647cfcaa818}{get\+Member\+By\+Id}} (@Path\+Variable(\char`\"{}member\+\_\+id\char`\"{}) Integer event\+Id)
+\item 
+Response\+Entity$<$ \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member}{Member}} $>$ \mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_member_controller_a83348a998130df2d6ea479b07413abae}{create\+Member}} (@Request\+Body \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member_d_t_o}{Member\+D\+TO}} member\+D\+TO)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_member_controller_abc70f18b1eb17e676134467cf5ede690}\label{classcom_1_1backend_1_1controller_1_1_member_controller_abc70f18b1eb17e676134467cf5ede690}} 
+\index{com.backend.controller.MemberController@{com.backend.controller.MemberController}!MemberController@{MemberController}}
+\index{MemberController@{MemberController}!com.backend.controller.MemberController@{com.backend.controller.MemberController}}
+\doxysubsubsection{\texorpdfstring{MemberController()}{MemberController()}}
+{\footnotesize\ttfamily com.\+backend.\+controller.\+Member\+Controller.\+Member\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1backend_1_1repository_1_1_member_repository}{Member\+Repository}}}]{member\+Repository,  }\item[{Model\+Mapper}]{model\+Mapper }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_member_controller_a83348a998130df2d6ea479b07413abae}\label{classcom_1_1backend_1_1controller_1_1_member_controller_a83348a998130df2d6ea479b07413abae}} 
+\index{com.backend.controller.MemberController@{com.backend.controller.MemberController}!createMember@{createMember}}
+\index{createMember@{createMember}!com.backend.controller.MemberController@{com.backend.controller.MemberController}}
+\doxysubsubsection{\texorpdfstring{createMember()}{createMember()}}
+{\footnotesize\ttfamily Response\+Entity$<$\mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member}{Member}}$>$ com.\+backend.\+controller.\+Member\+Controller.\+create\+Member (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member_d_t_o}{Member\+D\+TO}}}]{member\+D\+TO }\end{DoxyParamCaption})}
+
+Creates a member provided the Member\+D\+TO 
+\begin{DoxyParams}{Parameters}
+{\em member\+D\+TO} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Entity$<$\+Member$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_member_controller_af93e58a405c238a01502b647cfcaa818}\label{classcom_1_1backend_1_1controller_1_1_member_controller_af93e58a405c238a01502b647cfcaa818}} 
+\index{com.backend.controller.MemberController@{com.backend.controller.MemberController}!getMemberById@{getMemberById}}
+\index{getMemberById@{getMemberById}!com.backend.controller.MemberController@{com.backend.controller.MemberController}}
+\doxysubsubsection{\texorpdfstring{getMemberById()}{getMemberById()}}
+{\footnotesize\ttfamily Response\+Entity$<$Optional$<$\mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member}{Member}}$>$ $>$ com.\+backend.\+controller.\+Member\+Controller.\+get\+Member\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}member\+\_\+id\char`\"{}) Integer}]{event\+Id }\end{DoxyParamCaption})}
+
+Gets a member provided an ID 
+\begin{DoxyParams}{Parameters}
+{\em event\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Entity$<$Optional$<$\+Member$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_member_controller_a874b703f983efb546d784c46146f8f3b}\label{classcom_1_1backend_1_1controller_1_1_member_controller_a874b703f983efb546d784c46146f8f3b}} 
+\index{com.backend.controller.MemberController@{com.backend.controller.MemberController}!getMembers@{getMembers}}
+\index{getMembers@{getMembers}!com.backend.controller.MemberController@{com.backend.controller.MemberController}}
+\doxysubsubsection{\texorpdfstring{getMembers()}{getMembers()}}
+{\footnotesize\ttfamily Response\+Entity$<$Page$<$\mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_member}{Member}}$>$ $>$ com.\+backend.\+controller.\+Member\+Controller.\+get\+Members (\begin{DoxyParamCaption}\item[{Pageable}]{pageable }\end{DoxyParamCaption})}
+
+Returns all members provided a pageable object. 
+\begin{DoxyParams}{Parameters}
+{\em pageable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Entity$<$Page$<$\+Member$>$$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/backend/controller/\mbox{\hyperlink{_member_controller_8java}{Member\+Controller.\+java}}\end{DoxyCompactItemize}
