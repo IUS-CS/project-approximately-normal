@@ -56,6 +56,9 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
     compile("net.kemitix:sqlite-dialect:0.1.0")
+    compile("org.springframework.security:spring-security-config")
+    compile("org.springframework.security:spring-security-data")
+    compile("org.springframework.security:spring-security-web")
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.assertj:assertj-core')
     testCompile('junit:junit')
