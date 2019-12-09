@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from './Recruitment.module.css'
-import axios from 'axios'
 
 class Dashboard extends Component {
   constructor(props) {
@@ -14,24 +13,36 @@ class Dashboard extends Component {
   }
 
   myChangeHandler = e => {
-    this.setState({[e.target.name]: e.target.value})
+    this.setState({ [e.target.name]: e.target.value })
   }
 
   mySubmitHandler = e => {
     console.log(this.state)
-    axios.post('http://localhost:8080/v1/member')
+    fetch('http://localhost:8080/v1/member/', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        firstName: this.state.firstname,
+        lastName: this.state.lastname,
+        email: this.state.email
+      })
+    })
+    /*axios.post('http://localhost:8080/v1/member')
       .then(response => {
         console.log(response)
       })
       .catch(error => {
         console.log(error)
-      })
+      })*/
   }
 
   loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
 
   render() {
-    const {firstname, lastname, email} = this.state
+    const { firstname, lastname, email } = this.state
     return (
       <div className="animated fadeIn">
         <div className="card">
@@ -45,15 +56,15 @@ class Dashboard extends Component {
               <div className={styles.rowInput}>
                 <div className={styles.areaOfInput}>
                   <div className={styles.labels}>First Name</div>
-                  <input value={firstname}
-                    type='text'
+                  <input 
+                    type='text' value={firstname} name='firstname'
                     onChange={this.myChangeHandler}
                   />
                 </div>
                 <div className={styles.areaOfInput}>
                   <div className={styles.labels}>Last Name</div>
-                  <input value={lastname}
-                    type='text'
+                  <input 
+                    type='text' value={lastname} name='lastname'
                     onChange={this.myChangeHandler}
                   /></div>
               </div>
@@ -61,7 +72,7 @@ class Dashboard extends Component {
               <div className={styles.rowInput}>
                 <div className={styles.areaOfInput}>
                   <div className={styles.labels}>School Email</div>
-                  <input value={email}
+                  <input value={email} name='email'
                     type='text'
                     onChange={this.myChangeHandler}
                   />
