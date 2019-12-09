@@ -9,7 +9,7 @@ public class MemberDTO {
     @NotNull
     private String last_name;
     @NotNull
-    private Date email;
+    private String email;
 
     public String getFirstName() {
         return first_name;
@@ -27,11 +27,11 @@ public class MemberDTO {
         this.last_name = lastName;
     }
 
-    public Date getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Date email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 }
