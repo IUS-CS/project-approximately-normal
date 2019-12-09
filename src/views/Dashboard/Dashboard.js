@@ -17,26 +17,7 @@ class Dashboard extends Component {
           </div>
           <div className="card-body">
             <p>This is the IUS ESports Club's website. There will be more stuff here eventually. Or maybe not, who knows.</p>
-            <table className="table">
-              <thead>
-              <tr>
-                <th>Heading</th>
-                <th>Example</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>
-                  <p>
-                    <code className="h5">This is where you would put column one</code>
-                  </p>
-                </td>
-                <td>
-                  <span className="h5">This is where you would put column two</span>
-                </td>
-              </tr>
-              </tbody>
-            </table>
+            <p>We offer a centralized place for recruitment, statistics, and tournament information for the IUS e-sports club. This site will attempt to provide a meaningful way for casual and competitive gamers alike to bond and compete against eachother in local tournaments</p>
           </div>
         </div>
         <div className="card"></div>
