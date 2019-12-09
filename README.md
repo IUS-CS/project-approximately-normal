@@ -20,8 +20,6 @@ To just test some API endpoints, or to see what is available and what the contra
 ##Unit Testing
 Unit testing is performed and tested with Mockito. You can read more about Mockito here https://site.mockito.org/
 
-When running `gradle build` the unit tests will be ran by default. You can also run then by running `gradle test` from the command line. 
-
 ## Where is the Frontend?
 The frontend can be found on the master branch
 

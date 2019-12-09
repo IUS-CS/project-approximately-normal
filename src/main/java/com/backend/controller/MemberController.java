@@ -34,18 +34,33 @@ public class MemberController {
         this.modelMapper = modelMapper;
     }
 
+    /**
+     * Returns all members provided a pageable object.
+     * @param pageable
+     * @return ResponseEntity<Page<Member>>
+     */
     @ApiOperation("Gets all members from the member table")
     @GetMapping("/")
     public ResponseEntity<Page<Member>> getMembers(Pageable pageable) {
         return ResponseEntity.ok(memberRepository.findAll(pageable));
     }
 
+    /**
+     * Gets a member provided an ID
+     * @param eventId
+     * @return ResponseEntity<Optional<Member>>
+     */
     @ApiOperation("Gets a member by a specific id")
     @GetMapping("/{member_id}")
     public ResponseEntity<Optional<Member>> getMemberById(@PathVariable("member_id") Integer eventId) {
         return ResponseEntity.ok(memberRepository.findById(eventId));
     }
 
+    /**
+     * Creates a member provided the MemberDTO
+     * @param memberDTO
+     * @return ResponseEntity<Member>>
+     */
     @ApiOperation("Creates a new member")
     @PostMapping("/")
     public ResponseEntity<Member> createMember(@RequestBody MemberDTO memberDTO) {
