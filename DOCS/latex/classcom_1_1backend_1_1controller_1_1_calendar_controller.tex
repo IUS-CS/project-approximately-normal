@@ -1,0 +1,42 @@
+\hypertarget{classcom_1_1backend_1_1controller_1_1_calendar_controller}{}\doxysection{com.\+backend.\+controller.\+Calendar\+Controller Class Reference}
+\label{classcom_1_1backend_1_1controller_1_1_calendar_controller}\index{com.backend.controller.CalendarController@{com.backend.controller.CalendarController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_calendar_controller_a9b8f39563fb2200d45e0cf74c300af7c}{Calendar\+Controller}} (\mbox{\hyperlink{interfacecom_1_1backend_1_1repository_1_1_calendar_repository}{Calendar\+Repository}} calendar\+Repository, Model\+Mapper model\+Mapper)
+\item 
+Response\+Entity$<$ List$<$ \mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}} $>$ $>$ \mbox{\hyperlink{classcom_1_1backend_1_1controller_1_1_calendar_controller_ac8ecff88659218d64b0b38277717a21b}{get\+Calendar}} (@Request\+Param Date start\+\_\+date, @Request\+Param Date end\+\_\+date)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_calendar_controller_a9b8f39563fb2200d45e0cf74c300af7c}\label{classcom_1_1backend_1_1controller_1_1_calendar_controller_a9b8f39563fb2200d45e0cf74c300af7c}} 
+\index{com.backend.controller.CalendarController@{com.backend.controller.CalendarController}!CalendarController@{CalendarController}}
+\index{CalendarController@{CalendarController}!com.backend.controller.CalendarController@{com.backend.controller.CalendarController}}
+\doxysubsubsection{\texorpdfstring{CalendarController()}{CalendarController()}}
+{\footnotesize\ttfamily com.\+backend.\+controller.\+Calendar\+Controller.\+Calendar\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1backend_1_1repository_1_1_calendar_repository}{Calendar\+Repository}}}]{calendar\+Repository,  }\item[{Model\+Mapper}]{model\+Mapper }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1backend_1_1controller_1_1_calendar_controller_ac8ecff88659218d64b0b38277717a21b}\label{classcom_1_1backend_1_1controller_1_1_calendar_controller_ac8ecff88659218d64b0b38277717a21b}} 
+\index{com.backend.controller.CalendarController@{com.backend.controller.CalendarController}!getCalendar@{getCalendar}}
+\index{getCalendar@{getCalendar}!com.backend.controller.CalendarController@{com.backend.controller.CalendarController}}
+\doxysubsubsection{\texorpdfstring{getCalendar()}{getCalendar()}}
+{\footnotesize\ttfamily Response\+Entity$<$List$<$\mbox{\hyperlink{classcom_1_1backend_1_1domain_1_1_event}{Event}}$>$ $>$ com.\+backend.\+controller.\+Calendar\+Controller.\+get\+Calendar (\begin{DoxyParamCaption}\item[{@Request\+Param Date}]{start\+\_\+date,  }\item[{@Request\+Param Date}]{end\+\_\+date }\end{DoxyParamCaption})}
+
+This method will get all events that are between the start\+\_\+date and end\+\_\+date provided. 
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+date} & the start date of event(s) to search \\
+\hline
+{\em end\+\_\+date} & the end date of event(s) to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Entity$<$List$<$\+Event$>$$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/backend/controller/\mbox{\hyperlink{_calendar_controller_8java}{Calendar\+Controller.\+java}}\end{DoxyCompactItemize}
